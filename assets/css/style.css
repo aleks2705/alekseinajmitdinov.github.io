@@ -682,60 +682,6 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  margin-bottom: 20px;
-}
-
-.services .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #149ddd;
-}
-
-.services .icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
-}
-
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #149ddd;
-}
-
-.services .title {
-  margin-left: 80px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #343a40;
-}
-
-.services .title a:hover {
-  color: #149ddd;
-}
-
-.services .description {
-  margin-left: 80px;
-  line-height: 24px;
-  font-size: 14px;
-}
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -834,7 +780,28 @@ section {
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
+  position: relative;
 }
+
+.contact .blur {
+  filter: blur(2px);
+  position: relative;
+}
+
+.contact .upcoming-text{
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%); 
+  color: rgb(0, 0, 0); 
+  font-size: 1.5rem; 
+  text-align: center; 
+  z-index: 1; /*put the text above the zone*/
+}
+  /*font-size: 1.5rem;
+  color:#040b14;
+  margin-bottom: 10px;
+}*/
 
 .contact .info {
   padding: 30px;
