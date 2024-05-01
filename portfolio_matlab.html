@@ -105,9 +105,14 @@
             </div>
             <div class="portfolio-description">
               <h2>Project description</h2>
-              <p>
-                Description is upcoming...
-                This Portfolio is not yet finished 
+              <p class="align">
+                This project was completed during our 2nd year Technological Training. The main purpose of this project was to develop a software, using MATLAB environment.
+              </p>
+              <p class="align">
+                With my colleague, we decided to create a software to assist a gym manager in managing various datas related to his gym.
+              </p>
+              <p class="align">
+                To make it possible, we first created an Excel spreadsheet with different informations about the gym's visitors. Next to this point, using this data, we made some graphics that provided insights such as inventory levels for snacks, the top three most loyal customers, and the average number of visitors per day and per week. These visualizations enable the gym manager to make informed decisions and optimize operations.
               </p>
             </div>
           </div>
@@ -150,32 +155,37 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+            <div class="blur"> 
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
+                  </div>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                <div class="form-group">
+                  <label for="name">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
                 </div>
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+              </div> 
+              <div class="upcoming-text">
+                Upcoming zone
               </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
           </div>
 
         </div>
