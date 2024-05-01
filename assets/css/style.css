@@ -458,6 +458,10 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume .align{
+  text-align: justify;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -620,6 +624,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+.portfolio-details .align {
+  text-align:justify;
+
+}
 .portfolio-details {
   padding-top: 40px;
 }
